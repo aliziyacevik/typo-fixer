@@ -15,6 +15,12 @@ cd typo-fixer
 
 2. Create a virtual environment and activate it:
 
+- For Windows:
+```ps
+python3 -m venv venv
+source venv/bin/activate
+```
+- For Unix-based systems:
 ```bash
 python3 -m venv venv
 source venv/bin/activate
