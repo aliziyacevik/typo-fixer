@@ -17,8 +17,8 @@ cd typo-fixer
 
 - For Windows:
 ```ps
-python3 -m venv venv
-source venv/bin/activate
+python -m venv venv
+venv\Scripts\activate
 ```
 - For Unix-based systems:
 ```bash
