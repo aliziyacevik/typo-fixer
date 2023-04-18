@@ -6,50 +6,60 @@ Typo Fixer is a command-line tool that corrects typos in text files and director
 
 1. Clone the repository:
 
+
 ```bash
 git clone https://github.com/yourusername/typo-fixer.git
 cd typo-fixer
+```
 
 
 2. Create a virtual environment and activate it:
 
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 
 3. Install the required packages
-
+```bash
 pip3 install -r requirements.txt
+```
 
-Usage
+4. Make it runnable
+```sh
+chmod +x typo_fixer.py
+```
+
+## Usage
 Here are some examples of how to use Typo Fixer:
 
 Fix typos in a single file:
-
+```bash
 ./typo_fixer.py --file input.txt
-
+```
 Fix typos in all files in a directory (non-recursive):
-
+```bash
 ./typo_fixer.py --dir path/to/directory
-
+```
 
 Fix typos in all files in a directory and its subdirectories (recursive):
-
+```sh
 ./typo_fixer.py --dir path/to/directory -rec
-
+```
 
 Fix typos only in files with a specific extension in a directory (non-recursive):
-
+```sh
 ./typo_fixer.py --dir path/to/directory --endsw .extension
-
+```
 Fix typos only in files with a specific extension in a directory and its subdirectories (recursive):
-
+```sh
 ./typo_fixer.py --dir path/to/directory -rec --endsw .extension
-
+```
 Automatically save changes without asking for confirmation:
-
+```sh
 ./typo_fixer.py --file input.txt -force
-
-Contributing
+```
+## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue on GitHub.
 
