@@ -33,32 +33,48 @@ chmod +x typo_fixer.py
 ## Usage
 Here are some examples of how to use Typo Fixer:
 
-Fix typos in a single file:
+- Fix typos in a single file:
 ```bash
 ./typo_fixer.py --file input.txt
 ```
-Fix typos in all files in a directory (non-recursive):
+- Fix typos in all files in a directory (non-recursive):
 ```bash
 ./typo_fixer.py --dir path/to/directory
 ```
 
-Fix typos in all files in a directory and its subdirectories (recursive):
+- Fix typos in all files in a directory and its subdirectories (recursive):
 ```sh
 ./typo_fixer.py --dir path/to/directory -rec
 ```
 
-Fix typos only in files with a specific extension in a directory (non-recursive):
+- Fix typos only in files with a specific extension in a directory (non-recursive):
 ```sh
 ./typo_fixer.py --dir path/to/directory --endsw .extension
 ```
-Fix typos only in files with a specific extension in a directory and its subdirectories (recursive):
+
+- Fix typos only in files with a specific extension in a directory and its subdirectories (recursive):
 ```sh
 ./typo_fixer.py --dir path/to/directory -rec --endsw .extension
 ```
-Automatically save changes without asking for confirmation:
+
+- Automatically save changes without asking for confirmation:
 ```sh
 ./typo_fixer.py --file input.txt -force
 ```
+
+- Choose a different typo correction engine:
+```sh
+./typo_fixer.py --file input.txt --engine textblob
+```
+
+- Export typo report in JSON or CSV format:
+```sh
+./typo_fixer.py --file input.txt --export report.json
+./typo_fixer.py --file input.txt --export report.csv
+```
+
+
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue on GitHub.
