@@ -1,3 +1,7 @@
+# IMPORTANT
+There are still bugs and sometimes the words are not corrected the way we want it. Latter is due to engine choice. Default engine for type-fixer
+is textblob which is not the strongest one out there. Please feel free to contribute.
+
 # Typo Fixer
 
 Typo Fixer is a command-line tool that corrects typos in text files and directories. It supports various options such as recursive correction, file extension filters, and automatic saving of changes.
